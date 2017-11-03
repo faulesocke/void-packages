@@ -1,0 +1,22 @@
+--- src/have.h	2016-12-29 17:22:25.000000000 +0100
++++ /tmp/have.h	2017-11-05 12:31:30.344761929 +0100
+@@ -166,7 +166,7 @@
+ #endif
+ 
+ #ifdef HAVE_NET_ETHERNET_H
+-#include <net/ethernet.h>
++//#include <net/ethernet.h>
+ #endif
+ 
+ #ifdef HAVE_NET_IF_ARP_H
+@@ -181,10 +181,6 @@
+ #include <netinet/icmp6.h>
+ #endif
+ 
+-#ifdef HAVE_NETINET_IF_ETHER_H
+-#include <netinet/if_ether.h>
+-#endif
+-
+ #ifdef HAVE_ARPA_NAMESER_H
+ #include <arpa/nameser.h>
+ #endif
