@@ -1,0 +1,14 @@
+# Template file for 'crun'
+pkgname=crun
+version=0.10.6
+revision=1
+build_style=gnu-configure
+configure_args="--disable-systemd"
+hostmakedepends="pkg-config autoconf automake"
+makedepends="yajl-devel libtool libcap-devel python3-devel go-md2man gettext-devel libseccomp-devel"
+short_desc="Fast and lightweight OCI runtime and C library for running containers"
+maintainer="Urs Schulz <voidpkgs@ursschulz.de>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/containers/crun"
+distfiles="https://github.com/containers/crun/releases/download/${version}/crun-${version}.tar.xz"
+checksum=bd69ff6a4a3c9d8d2869100dcbbf074735ab9b854756a33560f4e3bd37bfecf1
